@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# other files
+static/js/app-lesson.js
+index-lesson.html
+
 # C extensions
 *.so
 
