@@ -50,7 +50,7 @@ function updateFilters() {
     else {
       delete filters[filterId];
     }
- 
+ console.log(filters)
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
   }
@@ -60,17 +60,17 @@ function updateFilters() {
   
     // 8. Set the filtered data to the tableData.
     let filteredData = tableData;
-  
+    console.log(filteredData)
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    for (var filter = 0; filter < filters.length; filter++) {
-      if (filter["id"]) {
-        // Apply `filter` to the table data to only keep the
-        // rows where the `datetime` value matches the filter value
-        filteredData = filteredData.filter(row => row.filter["id"] === filter["value"]);
-    }
-  }
-  
+    Object.entries(filters).forEach(entries => {
+        filteredData = filteredData.filter(row => row[entries[0]] == entries[1])
+        console.log(filteredData)
+        console.log(entries[0])
+        console.log(entries[1])
+      }
+    )
+
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
   }
