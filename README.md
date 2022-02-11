@@ -13,13 +13,13 @@ Users have the ability to hone in on the data by filtering the UFO sightings by 
 - Country
 - Shape
 
-To filter the data, the user will need to enter the desired criteria into the filters on the left-hand side. 
+To filter the data, the user will need to enter the desired criteria into the filters on the left-hand side. By default the filters are set to the following criteria: 
+- Date: 1/10/2010
+- City: san diego
+- State: ca
+- Country: us
 
-![Filters Demo](picture of filters on the left hand side)
-
-For example, if someone wants to get the list of all UFO sighting in San Diego, California on 1/10/2010, they would need to enter "san diego" for City and "1/10/2010" for Date. 
-
-![Filters Demo](picture of filters on the left hand side)
+![Filters Demo](static/images/UFO_web_page.png)
 
 Please note that the filters are case sensitive and all the search criteria have to be low case. If you type in "San Diego", you will not get any records.
 
